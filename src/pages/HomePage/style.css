@@ -68,6 +68,10 @@ body {
 
 }
 
+.paws a {
+  text-decoration: none;
+}
+
 .paw-green {
   transform: scaleX(-1);
   width: 13rem;
