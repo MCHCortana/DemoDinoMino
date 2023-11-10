@@ -2,7 +2,7 @@ import './reset.css';
 import './style.css';
 import { Link, Outlet } from 'react-router-dom';
 
-import { TitleText } from './../../Components/TitleText';
+import { TitleText } from '../../components/TitleText';
 
 export const HomePage = () => {
   return (
