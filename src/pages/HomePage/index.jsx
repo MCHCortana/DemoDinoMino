@@ -2,16 +2,16 @@ import './reset.css';
 import './style.css';
 import { Link, Outlet } from 'react-router-dom';
 
-import { TitleText } from './../../Components/TitleText';
-
 export const HomePage = () => {
   return (
     <div className="container">
-      <TitleText />
       <div className="dino-mino">
-        <div className="dinosaur">
-          <img src="/img/1.png" className="dino" alt="Dino"></img>
-        </div>
+        <Link to="/">
+          <div className="dinosaur">
+            <h2>Hlavní</h2>
+            <img src="/img/1.png" className="dino" alt="Dino"></img>
+          </div>
+        </Link>
         <div className="paws">
           <div className="paws-box">
             <Link to="/TanaPage">
