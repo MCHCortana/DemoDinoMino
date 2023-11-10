@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -9,7 +11,10 @@ html {
 }
 
 .container {
-  max-width: 26rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,23 +1,42 @@
+import './reset.css';
 import './style.css';
+import { Link, Outlet } from 'react-router-dom';
+
+import { TitleText } from './../../Components/TitleText';
 
 export const HomePage = () => {
   return (
     <div className="container">
-      <header>
-        <div className="logo" />
-        <h1>React webová aplikace</h1>
-      </header>
-      <main>
-        <p>
-          Startovací šablona pro webovou aplikaci v Reactu. Vytvořeno pomocí
-          {" "}
-          <a href="https://www.npmjs.com/package/create-czechitas-app">create-czechitas-app</a>
-          .
-        </p>
-      </main>
-      <footer>
-        <p>Czechitas, Digitální akademie: Web</p>
-      </footer>
+      <TitleText />
+      <div className="dino-mino">
+        <div className="dinosaur">
+          <img src="/img/1.png" className="dino" alt="Dino"></img>
+        </div>
+        <div className="paws">
+          <div className="paws-box">
+            <Link to="/TanaPage">
+              <h2>Táňa</h2>
+              <img
+                src="/img/Tana.png"
+                className="paw-blue"
+                alt="Step-purple"
+              ></img>{' '}
+            </Link>
+          </div>
+
+          <div className="paws-box">
+            <Link to="/TynaPage">
+              <h2>Týna</h2>
+              <img
+                src="/img/Tyna.png"
+                className="paw-green"
+                alt="Step-green"
+              ></img>{' '}
+            </Link>
+          </div>
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };

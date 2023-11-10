@@ -1,0 +1,9 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+h2 {
+  font-size: 4rem;
+}
