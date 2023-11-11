@@ -8,13 +8,24 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: chocolate;
 }
 
 .container {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80vw;
+  height: 80vh;
   justify-content: center;
   align-items: center;
+  flex: 0 1;
+  background-color: rgba(250, 235, 215, 0.748);
+  border-radius: 3rem;
+  box-shadow: inset 3px 3px 5px 0 rgba(81, 62, 62, 0.2), inset -3px -3px 5px 0 rgba(233, 246, 161, 0.5);
 }

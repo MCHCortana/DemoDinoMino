@@ -19,20 +19,15 @@ body {
 }
 
 #app {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
-.container {
-  margin: auto;
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  min-height: 90%;
-  justify-content: center;
-  align-items: center;
-  flex: 0 1;
+
+.dinosaur h2 {
+  text-decoration: none;
 }
+
 
 .dino-mino {
   display: flex;
