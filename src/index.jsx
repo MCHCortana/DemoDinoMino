@@ -1,10 +1,10 @@
 import { createRoot } from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { App } from './pages/App';
-import { Text } from './components/Text';
 import { ErrorPage } from './pages/ErrorPage';
 import { TanaPage } from './pages/TanaPage';
 import { TynaPage } from './pages/TynaPage';
+import { HomePage } from './pages/HomePage';
 
 import './global.css';
 
@@ -12,7 +12,12 @@ const router = createBrowserRouter([
   {
     path: '',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
+      {
+        path: '/',
+        element: <HomePage />,
+      },
       {
         path: 'Tanapage',
         element: <TanaPage />,
@@ -22,7 +27,6 @@ const router = createBrowserRouter([
         element: <TynaPage />,
       },
     ],
-    errorElement: <ErrorPage />,
   },
 ]);
 

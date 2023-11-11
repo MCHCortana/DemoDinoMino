@@ -1,17 +1,11 @@
-import './style.css';
-import { Link, Outlet } from 'react-router-dom';
-import { Text } from '../../components/Text';
+import { Outlet } from 'react-router-dom';
 import { Header } from '../../components/Header';
-import { MainContainer } from '../../components/MainContainer';
-import { useState } from 'react';
 
 export const App = () => {
   return (
     <>
-      <Header />
-      <div className="container">
-        <Text />
-        <MainContainer />
+      <div className="loaded-page">
+        <Header />
         <Outlet />
       </div>
     </>
