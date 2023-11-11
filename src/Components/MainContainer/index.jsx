@@ -6,7 +6,9 @@ export const MainContainer = () => {
     <>
       <div className="picture-container">
         <div className="dinosaur">
-          <img src="/img/1.png" className="dino" alt="Dino"></img>
+          <Link to="/about">
+            <img src="/img/1.png" className="dino" alt="Dino"></img>
+          </Link>
         </div>
         <div className="paws">
           <div className="paws-box">

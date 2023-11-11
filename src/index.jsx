@@ -5,6 +5,7 @@ import { ErrorPage } from './pages/ErrorPage';
 import { TanaPage } from './pages/TanaPage';
 import { TynaPage } from './pages/TynaPage';
 import { HomePage } from './pages/HomePage';
+import { About } from './pages/About';
 
 import './global.css';
 
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <HomePage />,
       },
+      { path: '/about', element: <About /> },
       {
         path: 'Tanapage',
         element: <TanaPage />,

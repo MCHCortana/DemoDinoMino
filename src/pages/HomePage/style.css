@@ -47,7 +47,7 @@ body {
 }
 
 .dino {
-  max-width: 100%;
+  width: 350Px;
   filter: drop-shadow(1px 15px 1px rgb(51, 255, 58, 0.4));
 }
 

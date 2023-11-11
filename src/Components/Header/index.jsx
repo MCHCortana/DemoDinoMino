@@ -1,41 +1,45 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useWin } from 'react';
+import { useWindowSize } from '@uidotdev/usehooks';
 import './style.css';
 
 export const Header = () => {
+  const size = useWindowSize();
   const [menuOn, setMenuOn] = useState(false);
+  const menuItems = [
+    { path: '/', name: 'Domů' },
+    { path: '/TanaPage', name: 'Táňa' },
+    { path: '/TynaPage', name: 'Týna' },
+  ];
   const openingMenu = () => {
     setMenuOn(!menuOn);
   };
   console.log(window.innerWidth);
   const showDino =
-    window.innerWidth <= 820 || window.innerHeight <= 700
+    size.width <= 820 || size.height <= 700
       ? 'dino-header--hide'
       : 'dino-header';
-  console.log(showDino);
   return (
     <header className="header">
       <div>
-        <img src="/img/1.png" className={showDino} alt="DinoLogo" />
+        <Link to="/">
+          <img src="/img/1.png" className={showDino} alt="DinoLogo" />
+        </Link>
       </div>
-      <button onClick={openingMenu} className="menu__btn"></button>
-      <div className={menuOn ? 'menu' : 'menu--closed'}>
-        <div className="menu-item">
-          <Link to="/">
-            {' '}
-            <h2>Domů </h2>
-          </Link>
+      <div className="menu-items">
+        <div className={menuOn ? 'menu' : 'menu--closed'}>
+          {menuItems.map((item) => {
+            return (
+              <div key={item.name} className="menu-item">
+                <Link to={item.path}>
+                  {' '}
+                  <h2>{item.name}</h2>
+                </Link>
+              </div>
+            );
+          })}
         </div>
-        <div className="menu-item">
-          <Link to="/TanaPage">
-            <h2>Táňa</h2>
-          </Link>
-        </div>
-        <div className="menu-item">
-          <Link to="/TynaPage">
-            <h2>Týna</h2>
-          </Link>
-        </div>
+        <button onClick={openingMenu} className="menu__btn"></button>
       </div>
     </header>
   );

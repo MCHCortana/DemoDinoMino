@@ -1,5 +1,9 @@
-.heading {
+.headline {
   text-align: center;
+}
+
+.headline--hide {
+  display: none;
 }
 
 .muj-den {

@@ -1,1 +1,42 @@
+.page-content {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 
+}
+
+.page-content-high {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page-content h2 {
+  align-self: center;
+}
+
+.textTyna h3 {
+  font-size: 2vw;
+  padding: 1vw;
+  text-align: center;
+}
+
+.textTyna {
+  width: 60%;
+  line-height: 2vw;
+  font-size: 1.5vw;
+  font-family: "Open sans";
+  margin-top: 1rem;
+}
+
+
+.textTyna strong {
+  font-style: italic;
+  font-weight: 700;
+}

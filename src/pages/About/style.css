@@ -4,20 +4,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
 
 .page-content h2 {
   align-self: center;
 }
 
-.textTana h3 {
+.textAbout h3 {
   font-size: 2rem;
   padding: 1rem;
   text-align: center;
 }
 
-.textTana {
-  width: 60%;
+.textAbout {
+  width: 50%;
   line-height: 2rem;
   font-size: 1.5rem;
   font-family: "Open sans";

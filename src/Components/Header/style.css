@@ -4,10 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .menu__btn {
+  justify-self: flex-end;
   display: block;
   background-color: transparent;
   background-image: url(./img/menu-icon.svg);
@@ -20,20 +20,24 @@
 }
 
 .dino-header {
-  width: 15vh;
+  width: 8vh;
   margin-left: 50%;
 }
 
 h2 {
-  font-size: 4vh;
+  font-size: 2rem;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
   gap: 1rem;
-  margin-right: 10%;
 }
 
 .menu--closed .menu-item,
@@ -42,7 +46,7 @@ h2 {
 }
 
 .menu-item {
-  background: linear-gradient(to right, rgba(166, 218, 136, 0.555), rgba(101, 225, 148, 0.525));
+  background: linear-gradient(to right, rgba(206, 240, 185, 0.555), rgba(101, 225, 148, 0.525));
   padding: 1rem;
   border-radius: 3rem;
   box-shadow: inset 3px 3px 5px 0 rgba(81, 62, 62, 0.2), inset -3px -3px 5px 0 rgba(233, 246, 161, 0.5);
