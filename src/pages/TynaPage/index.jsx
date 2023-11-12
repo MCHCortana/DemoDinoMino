@@ -4,7 +4,7 @@ import './style.css';
 export const TynaPage = () => {
   return (
     <div className="container">
-      <div className={showText}>
+      <div className="page-content">
         <div className="about">
           <img src="/img/Tyna.png" className="paw-blue" alt="Step-purple"></img>{' '}
         </div>
@@ -22,10 +22,9 @@ export const TynaPage = () => {
             Očekávám z tohohle projektu takový Javascriptový a Reactový
             adrenalin, že by se dal stáčet do energeťáku. Bude to pro mě první
             obří kolotoč kódu, kde si vyzkouším všechno. Těším se na všelijaké
-            zákruty, kódové akrobatické kousky, týmové debaty, které budou tak
-            vášnivé, že by se z nich dal natočit talk show. Věřím, že po tomhle
-            projektu budu připravena na další level a moje portfolio se rozšíří
-            jako vesmír při bigbangu...1 z nekonečna!
+            zákruty, kódové akrobatické kousky a týmové debaty. Věřím, že po
+            tomhle projektu budu připravena na další level a moje portfolio se
+            rozšíří jako vesmír při BigBangu...1 z nekonečna!
           </p>
         </div>
       </div>
