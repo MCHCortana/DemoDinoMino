@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, useWin } from 'react';
 // import { useWindowSize } from '@uidotdev/usehooks';
 import './style.css';
+import { MenuItem } from '../MenuItem';
 
 export const Header = () => {
   // const size = useWindowSize();
@@ -30,12 +31,7 @@ export const Header = () => {
         <div className={menuOn ? 'menu' : 'menu--closed'}>
           {menuItems.map((item) => {
             return (
-              <div key={item.name} className="menu-item">
-                <Link to={item.path}>
-                  {' '}
-                  <h2>{item.name}</h2>
-                </Link>
-              </div>
+              <MenuItem key={item.name} text={item.name} path={item.path} />
             );
           })}
         </div>
