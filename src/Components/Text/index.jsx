@@ -1,10 +1,10 @@
 import './style.css';
-import { useWindowSize } from '@uidotdev/usehooks';
+// import { useWindowSize } from '@uidotdev/usehooks';
 
 export const Text = () => {
-  const size = useWindowSize();
+  // const size = useWindowSize();
   const showText =
-    size.width <= 820 || size.height <= 700
+    window.innerWidth <= 820 || window.innerHeight <= 700
       ? 'headline headline--hide'
       : 'headline';
   return (

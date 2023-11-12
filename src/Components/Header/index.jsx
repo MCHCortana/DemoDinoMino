@@ -4,7 +4,7 @@ import { useState, useWin } from 'react';
 import './style.css';
 
 export const Header = () => {
-  const size = useWindowSize();
+  // const size = useWindowSize();
   const [menuOn, setMenuOn] = useState(false);
   const menuItems = [
     { path: '/', name: 'Domů' },
@@ -14,9 +14,9 @@ export const Header = () => {
   const openingMenu = () => {
     setMenuOn(!menuOn);
   };
-  console.log(window.innerWidth);
+
   const showDino =
-    window.location.width <= 820 || window.location.height <= 700
+    window.innerWidth <= 820 || window.innerHeight <= 700
       ? 'dino-header--hide'
       : 'dino-header';
   return (
