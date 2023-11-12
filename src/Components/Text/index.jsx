@@ -11,8 +11,8 @@ export const Text = () => {
     <div className={showText}>
       <h1 className="muj-den">Můj skvělý den!!!</h1>
       <p className="title-text">
-        Ahoj, jsem Dino-Mino, a spolu se mnou se budeš učit a bavit při
-        plánování tvého dne.
+        Ahoj, jsem Dino-Mino, spolu se mnou se budeš učit a bavit při plánování
+        tvého dne.
       </p>
     </div>
   );

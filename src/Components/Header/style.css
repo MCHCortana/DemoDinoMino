@@ -44,13 +44,6 @@ h2 {
   display: none;
 }
 
-.menu-item {
-  background: linear-gradient(to right, rgba(206, 240, 185, 0.555), rgba(101, 225, 148, 0.525));
-  padding: 1rem;
-  border-radius: 3rem;
-  box-shadow: inset 3px 3px 5px 0 rgba(81, 62, 62, 0.2), inset -3px -3px 5px 0 rgba(233, 246, 161, 0.5);
-}
-
 h2 {
   text-decoration: none;
 }
