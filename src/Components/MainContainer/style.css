@@ -38,6 +38,7 @@ body {
   max-width: 40%;
   flex-basis: 350px;
   flex-shrink: 1;
+  text-align: center;
 }
 
 .dino {

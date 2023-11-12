@@ -28,9 +28,10 @@
 }
 
 .textTyna {
-  width: 60%;
-  line-height: 2vw;
-  font-size: 1.5vw;
+  width: 80%;
+  min-height: 80%;
+  line-height: 2rem;
+  font-size: 1.5rem;
   font-family: "Open sans";
   margin-top: 1rem;
 }
