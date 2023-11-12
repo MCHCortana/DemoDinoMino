@@ -22,3 +22,8 @@
   font-size: 1.5rem;
   font-family: "Open sans";
 }
+
+.textTana strong {
+  font-style: italic;
+  font-weight: 700;
+}

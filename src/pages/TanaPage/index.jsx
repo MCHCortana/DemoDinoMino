@@ -9,18 +9,21 @@ export const TanaPage = () => {
         </div>
         <div className="textTana">
           <h3>Táňa</h3>
+          <p>Mám velkou radost, že jsem součástí Czechitas.</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
-            suscipit, et error consequuntur aspernatur voluptate asperiores
-            recusandae tempore eaque rerum, porro deserunt aliquam mollitia
-            beatae natus. Dolores veniam error eius! Dignissimos nostrum
-            expedita facilis dolorum itaque iste eos omnis consequuntur porro
-            numquam, molestias harum deleniti, adipisci nihil iusto aut, dolorem
-            labore laborum consectetur! Magnam fuga harum provident ipsa non
-            sequi! Soluta illo possimus eos saepe quos architecto aperiam iure.
-            Iste, dolore ipsa. Blanditiis molestiae recusandae accusamus ad
-            ducimus! Debitis recusandae eius ad magni explicabo laboriosam
-            quaerat nobis assumenda modi vel?
+            <strong>Inspiruje mě </strong>myšlenka naučit se webové technologie
+            a získat dovednosti v oblasti programování, což považuji za klíčové
+            ve dnešní digitální době.
+          </p>
+          <p>
+            <strong>Těším se na</strong> rozšiřování svých znalostí v oblasti
+            tvorby webových stránek, aplikací a dalších digitálních projektů.
+            Díky za podporu od zkušených mentorů a lektorů.
+          </p>
+          <p>
+            <strong>Věřím, že</strong> webová akademie Czechitas mi otevře dveře
+            k novým příležitostem a pomůže mi dosáhnout svých profesních cílů v
+            digitálním světě.
           </p>
         </div>
       </div>
