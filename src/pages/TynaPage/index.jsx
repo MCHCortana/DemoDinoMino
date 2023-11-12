@@ -1,10 +1,10 @@
 import './style.css';
-import { useWindowSize } from '@uidotdev/usehooks';
+// import { useWindowSize } from '@uidotdev/usehooks'; Vercel FIX
 
 export const TynaPage = () => {
   const size = useWindowSize();
   const showText =
-    size.width <= 820 || size.height <= 700
+    window.location.width <= 820 || window.location.height <= 700
       ? 'page-content-high'
       : 'page-content';
   return (

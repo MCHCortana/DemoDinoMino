@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useWin } from 'react';
-import { useWindowSize } from '@uidotdev/usehooks';
+// import { useWindowSize } from '@uidotdev/usehooks';
 import './style.css';
 
 export const Header = () => {
@@ -16,7 +16,7 @@ export const Header = () => {
   };
   console.log(window.innerWidth);
   const showDino =
-    size.width <= 820 || size.height <= 700
+    window.location.width <= 820 || window.location.height <= 700
       ? 'dino-header--hide'
       : 'dino-header';
   return (
